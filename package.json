@@ -1,0 +1,24 @@
+{
+  "name": "browser-mem-test",
+  "version": "1.0.0",
+  "description": "Test for how browsers reclaim memory from closed windows (or don't)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bootjack/browser-mem-test.git"
+  },
+  "author": "Jason Hinebaugh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bootjack/browser-mem-test/issues"
+  },
+  "homepage": "https://github.com/Bootjack/browser-mem-test#readme",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.2"
+  }
+}
