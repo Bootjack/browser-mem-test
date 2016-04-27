@@ -1,4 +1,5 @@
 var a = [], rando, span,
+    trappedWindow = window,
     worker = new SharedWorker('worker.js');
 
 while (a.length < 100000) {
@@ -12,3 +13,7 @@ while (a.length < 100000) {
 worker.port.onmessage = function (e) {
     console.log(e.data);
 }
+
+window.opener.addEventListener('unload', function () {
+    trappedWindow.close();
+});
